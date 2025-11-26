@@ -1,0 +1,8 @@
+#!/usr/bin/env python3
+
+# addwww: 標準入力の各行の末尾に "ｗｗｗ" を追加するコマン
+import sys
+
+for line in sys.stdin:
+    print(line.rstrip("\n") + "ｗｗｗ")
+
