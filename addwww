@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
-
 # SPDX-FileCopyrightText: 2025 tomoya shintomi 
-#標準入力の各行の末尾に "ｗｗｗ" を追加するコマンド
+# SPDX-License-Identifier: BSD-3-Clause
 
 import sys
 
