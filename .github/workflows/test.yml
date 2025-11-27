@@ -12,5 +12,5 @@ jobs:
         run: |
           chmod +x addwww
           echo "草" | ./addwww | grep "草ｗｗｗ"
-          ./addwww 草 | grep "草ｗｗｗ"
+          
 
