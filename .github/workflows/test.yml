@@ -1,0 +1,16 @@
+name: test
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Test addwww
+        run: |
+          chmod +x addwww
+          echo "草" | ./addwww | grep "草ｗｗｗ"
+          ./addwww 草 | grep "草ｗｗｗ"
+
