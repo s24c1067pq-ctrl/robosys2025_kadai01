@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
-# addwww: 標準入力の各行の末尾に "ｗｗｗ" を追加するコマン
+# SPDX-FileCopyrightText: 2025 tomoya shintomi 
+#標準入力の各行の末尾に "ｗｗｗ" を追加するコマンド
+
 import sys
 
 for line in sys.stdin:
