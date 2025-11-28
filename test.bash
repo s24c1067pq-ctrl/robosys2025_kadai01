@@ -1,10 +1,12 @@
 #!/bin/bash
-#SPDX-FileCopyrightText: 2025 shintomi tomoya
-set -e  # エラーなら即終了
+# SPDX-FileCopyrightText: 2025 shintomi tomoya 　　　　　
+# SPDX-License-Identifier: BSD-3-Claus
+
+set -e  
 
 echo "=== Running addwww tests ==="
 
-# 標準入力のテスト
+
 result=$(echo "草" | ./addwww)
 
 if [ "$result" = "草ｗｗｗ" ]; then
