@@ -11,6 +11,6 @@ jobs:
       - name: Test addwww
         run: |
           chmod +x addwww
-          echo "草" | ./addwww | grep "草ｗｗｗ"
-          
+          chmod +x test test.bash
+         ./test.bash 
 
