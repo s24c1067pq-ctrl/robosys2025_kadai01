@@ -11,6 +11,7 @@ jobs:
       - name: Test addwww
         run: |
           chmod +x addwww
-          chmod +x test test.bash
-         ./test.bash 
+          chmod +x test.bash
+          ./test.bash
+ 
 
