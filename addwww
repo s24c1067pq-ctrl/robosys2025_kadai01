@@ -3,7 +3,33 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 import sys
+from reportlab.lib.pagesizes import A4
+from reportlab.pdfgen import canvas
 
-for line in sys.stdin:
-    print(line.rstrip("\n") + "ｗｗｗ")
+lines = sys.stdin.read().splitlines()
+
+
+pdf = canvas.Canvas("output.pdf", pagesize=A4)
+width, height = A4
+y = height - 40
+
+output_lines = []
+
+for line in lines:
+    new_line = line + "ｗｗｗ"
+    output_lines.append(new_line)
+
+    
+    pdf.drawString(40, y, new_line)
+    y -= 14
+
+    if y < 40:
+        pdf.showPage()
+        y = height - 40
+
+pdf.save()
+
+for l in output_lines:
+    print(l)
+
 
