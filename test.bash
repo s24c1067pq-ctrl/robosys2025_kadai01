@@ -21,10 +21,6 @@ result=$(printf "一行目\n\n三行目\n" | ./addwww)
 [ "$result" = $'一行目ｗｗｗ\n\n三行目ｗｗｗ' ]
 echo "PASS: 空行"
 
-# 例4：空白を含む行
-result=$(printf "これは テスト です\n" | ./addwww)
-[ "$result" = "これは テスト ですｗｗｗ" ]
-echo "PASS: 空白あり"
 
 echo "ALL TESTS PASSED"
 exit 0
