@@ -4,12 +4,6 @@
 
 set -e
 
-#!/bin/bash
-# SPDX-FileCopyrightText: 2025 tomoya shintomi
-# SPDX-License-Identifier: BSD-3-Clause
-
-set -e
-
 echo "=== 正常系テスト ==="
 
 # 例1：1行
